@@ -1,4 +1,5 @@
-const url = 'http://localhost:8082/api/producto';
+//const url = 'http://localhost:8082/api/producto';
+const url = 'https://api-cosmetic.onrender.com/api/producto';
 let nombreCategoriaSeleccionada = "";
 
 const listarDatos = async () => {
@@ -333,7 +334,9 @@ const eliminar = (id) => {
 
 const obtenerCategoriaProductos = async () => {
   try {
-    const response = await fetch("http://localhost:8082/api/categoriaProducto", {
+    //const response = await fetch("http://localhost:8082/api/categoriaProducto", {
+      const response = await fetch("https://api-cosmetic.onrender.com/api/categoriaProducto", {
+
       method: "GET",
       mode: "cors",
       headers: { "Content-type": "application/json; charset=UTF-8" },

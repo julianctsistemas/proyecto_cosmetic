@@ -1,6 +1,8 @@
 // Función para descargar el archivo Excel
 const descargarExcel = async () => {
-  const url = "http://localhost:8082/api/producto";
+  const url = "https://api-cosmetic.onrender.com/api/producto";
+
+  
 
   try {
     const response = await fetch(url, {
